@@ -102,5 +102,5 @@ if __name__  == "__main__":
             ###########################################################
             print("%s get finished,check please!!!" % val)
         print("*"*30)
-        time.sleep(10)
+        time.sleep(30)
    
