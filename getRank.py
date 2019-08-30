@@ -95,9 +95,12 @@ if __name__  == "__main__":
             #rsync_cmd = ""
             #status = subprocess.getstatusoutput(rsync_cmd)[0]
             ### git related ###########################################
-            subprocess.check_call(['git', 'add', '.'])
-            subprocess.check_call(['git', 'commit', '-am', '\"update\"'])
-            subprocess.check_call(['git', 'push'])
+            # subprocess.check_call(['git', 'add', '.'])
+            try:
+                subprocess.check_call(['git', 'commit', '-am', '\"update\"'])
+                subprocess.check_call(['git', 'push'])
+            except:
+                pass
 
             ###########################################################
             print("%s get finished,check please!!!" % val)
